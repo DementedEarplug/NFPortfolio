@@ -1,0 +1,16 @@
+{
+  "name": "nfportfolio",
+  "version": "1.0.0",
+  "description": "Responsive portfolio websive for resume and stuff",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive", 
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Onix Tarrats Calderon",
+  "license": "MIT"
+}
