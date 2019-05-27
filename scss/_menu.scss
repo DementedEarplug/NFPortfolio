@@ -37,3 +37,28 @@
         }
     }
 }
+
+// Creating the menu overlay
+.menu{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.9;
+    visibility: hidden;
+
+    &.show{
+        visibility: visible;
+    }
+
+    &-branding, &-nav { // the &- is like saying .menu-branding 
+        display: flex;
+        flex-flow: column wrap; //Makes it into a column
+        align-items: center; // centers vertically
+        justify-content: center; // centers horizontally
+        float: left;
+        width: 50%; // split it in have
+        height: 100vh;
+        overflow: hidden;
+
+    }
+}
