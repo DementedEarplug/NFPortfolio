@@ -1,4 +1,4 @@
-$primary-color: #444;
+$primary-color: #444444;
 $secondary-color: #53cc53;
 $show-home-img: true;
 // $home-img:;
@@ -27,6 +27,15 @@ $background-opacity: 0.9;
 
             }
         }
+    }
+}
+
+// Funciton to set text color depending on primary color
+@function setTextColor($color){
+    @if(lightness($color)>40){
+        @return #161616;
+    } @else {
+        @return #f5f5f5;
     }
 }
 

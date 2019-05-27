@@ -11,7 +11,7 @@
         width: 28px;
         height: 2.5px;
         margin: 0 0 5px 0;
-        background: whitesmoke;
+        background: setTextColor($primary-color);
         @include easeout;
     }
 
@@ -92,10 +92,10 @@
             width: 250px;
             border-radius: 50%;
             border: solid 3px $secondary-color;
-            background:  url('https://lh3.googleusercontent.com/fgEgdx9SblEgrthkJCCEhGWpPM9jcQUXibMPEOdjMlC9TAEcY7sfXNfohk3wcJTkSf_-_j4PJkz7-DvDbZ0-UCleviGLRBtVHPP-wGMlKRPGUAb23MG1Zp4RDH6qF82yxMeO4wGC4rzGOBwQaaV06uAFxKuby_IgLHw7anyku1bY76zDeiLEGL8ji5St_qjTjZ2ft6ElubldmPyen5DFChHQ-X9ARU586rL9tWIi4EoTCGXMnbgqMsUh2QB49E4Cif5jZHi3RQsLKKHIvLLCVDqD_9YfGdLmMQQULox1G_u0h1-zWlYRZDpzYPMZbu_SW1iDSqRe9PnFW2O3_BTxSMSJ6_juaWNPicbn_yH_wVihlp3qttmNIxF_Q7Ddu69K6ebsh52rwOm_UrZeoH2ZItV1kfRZfl2nE_CiwiE9QlHj7uiDwvrLWw4luYuqaJhZ0eQFzF2O9IHvdnLGWqMht9n_FXluwtrKBG_r9ec424Er9McJ8ssOc_-LXJvy6uBZe1rmgA7fyNL2jw2LA0Hef9T2E1g7zAjPt2zTpfMFEta8kO8Mma3nMwF02a5MXX2cPQ6drpbiRrPBt49_22mhZSIzM-gUgg8ZE3TKxVMDKHHQD-X6z5R5kdEswPlg-uLeSTuy6pWik8ZiASNTb6OY7xGUKvLWQxiv=w659-h878-no');
+            background:  url('https://lh3.googleusercontent.com/RtLLP1yl7IY9T5dhSkKMfXjSf6GlzEFjQp2gLhvcVG-gx4X7Qm0UXiH3ZVGA6D2ZRdqqWw5f4f1-YbheJ_ghtNXpmTHASMj7P5SJzFTCSYD08qOfvx_U09ZAkejCu0QVCGy-9xYEt4oMTNTIa1ijbNIylkrNpduOH-l--49udjsIlL0sVqLxb5HPMXisPJWyyGrOOZZLGKm379jVX8oKnv2ZmuQ71pXT66BdqdoYO9GEPSVvOAHoXhUJRZ1Xbfm5WfIWDB4BEfhP7uTgwsUz1qdAm3v_U3yUEF26GSODG6hQlwSnZDOvPrMs1T8tBg_PPXCq0atLFZ6YQzMRk1M5_JNcMYmEnoInmR01vTD8Ex1pANaeC2mrbtKoK9aMNunLlCotJpAulKVryYEgQZr0ixXLuQiCSgasHjdfDfT6QjFDVm7XPtMx2sEUcGbj60xazjtM0EqiZlFH9xpYIWa3WCjs8c_lOQQvNUNVX_p5nxc96yNQMiVWXGmDSIRa0Hxqzt1KUdB1NfRe3SFYAU_1mb73XpLzNUPEG7g591z2YeQvdmpmWH7FWaz0XqXV8IL7bm7tRx1pcstQ9udAqV30UIdaY8bNys7UzeN9L9vMbOxefrrEVUmNVicCSH1kvUcCNqD5KbdmQ1TMblhn34RNaQzChM9aN-FW=w495-h879-no');
             background-attachment: fixed;
             background-size: cover;
-            background-position-y: -25px; // SHift picture up a little
+            background-position-y: -45px; // SHift picture up a little
         }
     }
 
@@ -108,7 +108,7 @@
         text-decoration: none;
         padding: 1rem 0;
         font-weight: 300;
-        color: whitesmoke;
+        color: setTextColor($primary-color);
         @include easeout;
 
         &:hover{
