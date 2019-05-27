@@ -15,7 +15,7 @@ $background-opacity: 0.9;
             background:  url(https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
             background-attachment: fixed;
             background-size: cover;
-            &:after { // This places an empty element after the element bg-img
+            &:after { // This places an empty element after the element bg-img to create the overlay
                 content: '';
                 position: absolute;
                 top: 0;
