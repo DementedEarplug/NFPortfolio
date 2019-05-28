@@ -171,8 +171,7 @@ main {
     border: solid 3px #53cc53; }
   .about-info .bio {
     grid-area: bio;
-    font-size: 1.5rem;
-    padding: 1rem; }
+    font-size: 1.5rem; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
@@ -184,12 +183,49 @@ main {
     background: #515151;
     border-bottom: #53cc53 5px solid; }
 
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr); }
+  .projects img {
+    width: 100%;
+    border: 2px whitesmoke solid; }
+    .projects img:hover {
+      opacity: 0.5;
+      border-color: #53cc53;
+      transition: all 0.5s ease-out; }
+
+.btn, .btn-dark, .btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    background: #2a8f2a;
+    color: #f5f5f5; }
+
+.btn-dark {
+  background: black;
+  color: whitesmoke; }
+
+.btn-light {
+  background: #c4c4c4;
+  color: #333; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
   background: #2b2b2b;
   color: #f5f5f5;
   height: 60px; }
+
+@media screen and (min-width: 1171px) {
+  .projects {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -214,7 +250,7 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("https://lh3.googleusercontent.com/RtLLP1yl7IY9T5dhSkKMfXjSf6GlzEFjQp2gLhvcVG-gx4X7Qm0UXiH3ZVGA6D2ZRdqqWw5f4f1-YbheJ_ghtNXpmTHASMj7P5SJzFTCSYD08qOfvx_U09ZAkejCu0QVCGy-9xYEt4oMTNTIa1ijbNIylkrNpduOH-l--49udjsIlL0sVqLxb5HPMXisPJWyyGrOOZZLGKm379jVX8oKnv2ZmuQ71pXT66BdqdoYO9GEPSVvOAHoXhUJRZ1Xbfm5WfIWDB4BEfhP7uTgwsUz1qdAm3v_U3yUEF26GSODG6hQlwSnZDOvPrMs1T8tBg_PPXCq0atLFZ6YQzMRk1M5_JNcMYmEnoInmR01vTD8Ex1pANaeC2mrbtKoK9aMNunLlCotJpAulKVryYEgQZr0ixXLuQiCSgasHjdfDfT6QjFDVm7XPtMx2sEUcGbj60xazjtM0EqiZlFH9xpYIWa3WCjs8c_lOQQvNUNVX_p5nxc96yNQMiVWXGmDSIRa0Hxqzt1KUdB1NfRe3SFYAU_1mb73XpLzNUPEG7g591z2YeQvdmpmWH7FWaz0XqXV8IL7bm7tRx1pcstQ9udAqV30UIdaY8bNys7UzeN9L9vMbOxefrrEVUmNVicCSH1kvUcCNqD5KbdmQ1TMblhn34RNaQzChM9aN-FW=w495-h879-no");
+      background: url(../dist/img/portrait-sm.jpg);
       width: 120px;
       height: 120px;
       background-attachment: fixed;
@@ -222,8 +258,12 @@ main {
       background-position-y: -25px; }
   .about-info {
     grid-template-areas: 'bio-image'  'bio' 'job1'  'job2'  'job3';
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .projects {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
-    margin-top: 10vh; } }
+    margin-top: 10vh; }
+  .projects {
+    grid-template-columns: 1fr; } }

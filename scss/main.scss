@@ -102,7 +102,6 @@ main{
     .bio{
         grid-area: bio;
         font-size: 1.5rem;
-        padding: 1rem;
     }
 
     
@@ -126,6 +125,50 @@ main{
 
 }
 
+// Work/projecrs styling
+
+.projects {
+    display: grid;
+    grid-gap: 0.7rem;
+    grid-template-columns: repeat(3,1fr);
+
+    img {
+        width: 100%; // percentage is relative of the container holding the element.
+        border: 2px whitesmoke solid;
+
+        &:hover {
+            opacity: 0.5;
+            border-color: $secondary-color;
+            @include easeout;
+        }
+    }
+}
+
+// button styles
+.btn {
+    display: block; // that way each is in its own line and go all the way accross
+    padding: 0.5rem 1rem;
+    border:0;
+    margin-bottom: 0.3rem;
+
+    &:hover {
+        background: darken($color: $secondary-color, $amount: 20);
+        color: setTextColor($primary-color);
+    }
+}
+
+.btn-dark {
+    @extend .btn;
+    background: darken($color: $primary-color, $amount: 50);
+    color: whitesmoke;
+}
+
+.btn-light {
+    @extend .btn; 
+    background: lighten($color: $primary-color, $amount: 50);
+    color: #333;
+}
+
 // Styling the footer
 #main-footer {
     text-align: center;
@@ -136,3 +179,4 @@ main{
 }
 
 @import 'mobile'; //this is at the bottom so it runs after the main scss
+
