@@ -169,6 +169,28 @@ main{
     color: #333;
 }
 
+// Contact page
+.boxes {
+    display: flex;
+    flex-wrap: wrap; //this wraps flex boxes on resize
+    justify-content: space-evenly; //spreads items evenly
+    align-items: center;
+    margin-top: 1rem; //for spacing of the header and the box group
+
+    div {
+        font-size: 2rem;
+        border: 3px whitesmoke solid;
+        padding: 1.5rem 2.5rem; 
+        margin-bottom: 3rem; //for when they are stacked
+        @include easeout;
+        &:hover {
+            border-color: $secondary-color;
+            padding: .5rem 1.5rem; 
+        }
+    }
+
+}
+
 // Styling the footer
 #main-footer {
     text-align: center;
